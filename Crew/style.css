@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../assets/mobile/crew-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2.4rem 2.4rem 10.42rem;
+  gap: 2.4rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+.burger_menu_div {
+  position: absolute;
+  width: 25.4rem;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px);
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6.5rem;
+  padding: 3.395rem 2.645rem 37.7rem 3.2rem;
+}
+.burger_menu_div img {
+  width: 1.9092rem;
+  height: 1.9092rem;
+  align-self: end;
+}
+.burger_menu_div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.burger_menu_div ul a {
+  display: flex;
+  gap: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Barlow Condensed";
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.27rem;
+}
+.hidden {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+h1 {
+  display: flex;
+  color: #fff;
+  font-family: "Barlow Condensed";
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.27rem;
+  text-transform: uppercase;
+  gap: 1.6rem;
+}
+h1 span {
+  font-weight: 700;
+  opacity: 0.25;
+}
+.main_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+.img_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img {
+  width: 17.7123rem;
+  height: 22.2rem;
+}
+.Man_image_line {
+  width: 32.7rem;
+  height: 0.1rem;
+  background: #383b4b;
+}
+.points {
+  display: flex;
+  gap: 1.6rem;
+}
+.point {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  opacity: 0.1744;
+  background: #fff;
+}
+.point.active {
+  opacity: 100;
+}
+
+.role {
+  color: #fff;
+  text-align: center;
+  font-family: "Bellefair";
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0.4951;
+}
+.name {
+  color: #fff;
+  text-align: center;
+  font-family: "Bellefair";
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.bio {
+  color: #d0d6f9;
+  text-align: center;
+  font-family: "Barlow";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.person_info {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 3.2rem;
+}
+.person_name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.desk_line {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #0b0d17;
+    background-image: url(../assets/tablet/crew-bg.png);
+    padding: 0;
+    padding-left: 3.85rem;
+    gap: 4rem;
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .hidden {
+    display: flex;
+  }
+  .burger_menu {
+    display: none;
+  }
+  .burger_menu_div {
+    position: relative;
+    width: 45rem;
+    height: 9.6rem;
+    padding: 3.9rem 4.8rem 4rem;
+  }
+  .burger_menu_div img {
+    display: none;
+  }
+  .burger_menu_div ul {
+    flex-direction: row;
+    width: 35.4rem;
+    justify-content: space-between;
+  }
+  .burger_menu_div ul a {
+    display: inline;
+    font-size: 1.4rem;
+    letter-spacing: 0.211rem;
+  }
+  .dest-right {
+    margin-right: 0.5rem;
+  }
+  .burger_menu_div ul b {
+    display: none;
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    left: 24.6rem;
+    width: 3.6rem;
+    height: 0.3rem;
+    background: #fff;
+  }
+
+  main {
+    gap: 6rem;
+    align-items: start;
+  }
+
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 0.3375rem;
+    gap: 1.6rem;
+  }
+  .main_sec {
+    flex-direction: column-reverse;
+    gap: 4rem;
+    margin-left: 0;
+  }
+  .img {
+    width: 45.6372rem;
+    height: 57.2rem;
+    position: relative;
+    bottom: -4rem;
+  }
+  .Man_image_line {
+    display: none;
+  }
+  .role {
+    font-size: 2.4rem;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  .bio {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    width: 45.8rem;
+  }
+  .person_info {
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(../assets/desktop/crew-bg.png);
+    padding: 4rem 0 0 5.5rem;
+    gap: 7.6rem;
+  }
+  .burger_menu_div {
+    width: 83rem;
+    padding: 3.9rem 16.7rem 3.8rem 12.3rem;
+  }
+  .burger_menu_div ul {
+    width: 54rem;
+  }
+  .burger_menu_div ul b {
+    display: flex;
+  }
+  .burger_menu_div ul a {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 1.2rem;
+    letter-spacing: 0.27rem;
+  }
+  .line {
+    left: 41.9rem;
+    width: 7.1rem;
+  }
+  main {
+    gap: 15.4rem;
+    padding: 0 13.7rem 0 11.15rem;
+  }
+  .point {
+    cursor: pointer;
+  }
+  h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.4725rem;
+    gap: 2.4rem;
+    height: 3.4rem;
+  }
+  .main_sec {
+    flex-direction: row-reverse;
+    gap: 15.7rem;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .img {
+    width: 56.8072rem;
+    height: 71.2rem;
+    bottom: 0;
+    top: -20.2rem;
+  }
+  .role {
+    text-align: start;
+    font-size: 3.2rem;
+    opacity: 0.5042;
+  }
+  .name {
+    text-align: start;
+    font-size: 5.6rem;
+    margin-bottom: 1.2rem;
+  }
+  .bio {
+    text-align: start;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    width: 44.4rem;
+  }
+  .person_info {
+    flex-direction: column;
+    gap: 12rem;
+    align-items: flex-start;
+  }
+  .person_name {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .desk_line {
+    display: inline;
+    width: 47.3rem;
+    height: 0.1rem;
+    background: #fff;
+    opacity: 0.2515;
+    position: absolute;
+    top: 8.8rem;
+    left: 16.7rem;
+  }
+}
