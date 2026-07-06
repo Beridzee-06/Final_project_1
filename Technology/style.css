@@ -38,6 +38,7 @@ header {
   flex-direction: column;
   gap: 6.5rem;
   padding: 3.395rem 2.645rem 37.7rem 3.2rem;
+  z-index: 999;
 }
 .burger_menu_div img {
   width: 1.9092rem;
